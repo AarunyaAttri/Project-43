@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);  
+  background(bg);  
   hr=hour();
   mn=minute();
   sc=second();
@@ -79,5 +79,4 @@ async function getBackgroundImg(){
     }
 
     backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
 }
