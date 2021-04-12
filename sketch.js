@@ -3,6 +3,7 @@ var mn;
 var sc;
 var bg = "bg1.png";
 var hr_angle,mn_angle,sc_angle;
+var backgroundImg;
 
 function preload() {
     getBackgroundImg();
@@ -13,8 +14,10 @@ function setup() {
   //createSprite(0, 0, 50, 50);
 }
 
-function draw() {
-  background( backgroundImg);  
+function draw(){
+  if(backgroundImg){  
+  background(backgroundImg);  
+  }   
   hr=hour();
   mn=minute();
   sc=second();
