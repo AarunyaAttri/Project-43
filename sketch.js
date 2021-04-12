@@ -1,9 +1,12 @@
 var hr;
 var mn;
 var sc;
-
+var bg = "bg1.png";
 var hr_angle,mn_angle,sc_angle;
 
+function preload() {
+    getBackgroundImg();
+}
 
 function setup() {
   createCanvas(400,450);
@@ -11,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(bg);  
+  background( backgroundImg);  
   hr=hour();
   mn=minute();
   sc=second();
