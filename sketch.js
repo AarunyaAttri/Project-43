@@ -1,7 +1,6 @@
 var hr;
 var mn;
 var sc;
-var bg = "bg1.png";
 var hr_angle,mn_angle,sc_angle;
 var backgroundImg;
 
@@ -78,10 +77,10 @@ async function getBackgroundImg(){
     var hour = datetime.slice(11,13);
     
     if(hour>=0600 && hour<=1900){
-        bg = "bg1.png";
+        bg = "bg2.png";
     }
     else{
-        bg = "bg2.jpg";
+        bg = "bg1.jpg";
     }
 
     backgroundImg = loadImage(bg);
